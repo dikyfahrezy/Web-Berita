@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  max-width: 70%;
+  margin-inline: auto;
+  margin-block: 5rem;
+}
+header h1 {
+  width: 70%;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 3rem;
+  margin-bottom: 2.5rem;
+}
+figure {
+  margin-block: 2.5rem 3rem;
+}
+figure img {
+  max-width: 100%;
+  margin-bottom: 1.5rem;
+}
+figcaption p {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #6b7280;
+  margin-right: 1rem;
+}
+
+main {
+  max-width: 670px;
+  margin-bottom: 5rem;
+}
+
+main p {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  line-height: 2rem;
+}
+
+section button {
+  background-color: black;
+  color: white;
+  padding: 1rem 2.5rem;
+  border-radius: 5px;
+  margin-right: 1rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  border: 3px solid black;
+  transition: 0.3s;
+}
+section button:hover {
+  background-color: white;
+  color: black;
+}
+section button.like:active {
+  background-color: pink;
+  color: white;
+  border: 3px solid deeppink;
+}
+section button.comment:active {
+  color: white;
+  background-color: aquamarine;
+  border: 3px solid darkgreen;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    max-width: 85%;
+  }
+  header h1 {
+    width: 100%;
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  section button {
+    font-size: 1rem;
+  }
+}
