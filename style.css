@@ -23,6 +23,7 @@ figure {
 }
 figure img {
   max-width: 100%;
+  border-radius: 5px;
   margin-bottom: 1.5rem;
 }
 figcaption p {
@@ -53,6 +54,7 @@ section button {
   font-size: 1.125rem;
   font-weight: 700;
   border: 3px solid black;
+  cursor: pointer;
   transition: 0.3s;
 }
 section button:hover {
